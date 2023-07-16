@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonObject.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
-                .header("Authorization","Bearer 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")
+                .header("Authorization","Bearer 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") // Use your link if you fork this repo otherwise its won't run
                 .post(body)
                 .build();
         client.newCall(request).enqueue(new Callback() {
