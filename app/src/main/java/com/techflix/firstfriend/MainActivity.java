@@ -38,6 +38,7 @@ import okhttp3.Response;
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     TextView welcomeTextView;
+    // new code
     EditText messageEditText;
     ImageButton sendButton,mic;
     List<Message> messageList;
