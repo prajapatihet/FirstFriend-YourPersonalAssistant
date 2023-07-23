@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         mic = findViewById(R.id.micButton);
 
         messageAdapter = new MessageAdapter(messageList);
+        // view on recycler view
         recyclerView.setAdapter(messageAdapter);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         manager.setStackFromEnd(true);
