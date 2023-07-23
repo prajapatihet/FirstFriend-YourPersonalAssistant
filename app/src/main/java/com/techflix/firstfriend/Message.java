@@ -3,7 +3,7 @@ package com.techflix.firstfriend;
 public class Message {
     public static String SENT_BY_ME = "me";
     public static String SENT_BY_BOT="bot";
-
+    // model for handle getter and setter operation
     String message;
     String sentBy;
 
