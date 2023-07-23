@@ -14,6 +14,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     Button toMain;
     LottieAnimationView animationView,chat;
+    // Splash screen for some animations
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
