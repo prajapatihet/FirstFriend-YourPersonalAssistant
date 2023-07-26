@@ -128,9 +128,9 @@ public class MainActivity extends AppCompatActivity {
         JSONObject jsonObject = new JSONObject();
 
         try {
-            jsonObject.put("model","text-davinci-003");
+            jsonObject.put("model","gpt-3.5-turbo-0613");
             jsonObject.put("prompt",question);
-            jsonObject.put("max_tokens",4000);
+            jsonObject.put("max_tokens",40000);
             jsonObject.put("temperature",0);
         } catch (JSONException e) {
             e.printStackTrace();
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonObject.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
-                .header("Authorization","Bearer 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") // Use your link if you fork this repo otherwise its won't run
+                .header("Authorization","Bearer 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") // Use your link if you fork this repo otherwise its won't run
                 .post(body)
                 .build();
         client.newCall(request).enqueue(new Callback() {
